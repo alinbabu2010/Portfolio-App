@@ -1,3 +1,4 @@
 projects/__pycache__/
 projects/migrations/__pycache__/
 myenv
+static/
