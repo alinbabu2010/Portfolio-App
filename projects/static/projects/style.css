@@ -13,7 +13,7 @@ jumbotron {
   }
   
 .jumbotron p:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
   
 .jumbotron h1 {

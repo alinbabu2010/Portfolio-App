@@ -26,7 +26,8 @@
                     specially for you</p>
                 <p>
                     <a href="mailto:alinbabu2010@zohomail.in" class="btn btn-primary my-2">Email us</a>
-                    <a href="https://data-flair.training/blogs/django-project-ideas/" class="btn btn-info my-2">More projects</a>
+                    <a href="https://data-flair.training/blogs/django-project-ideas/" class="btn btn-info my-2">More
+                        projects</a>
                 </p>
                 <img src="{% static 'projects/logo.png' %}" alt="Logo">
             </div>
@@ -37,11 +38,12 @@
                 <div class="row">
                     {% for project in projects.all %}
                     <div class="col-lg-4 py-3">
-                        <div class="card mb-5 shadow-lg h-100">
-                            <img class="card-img-top" src="{{ project.image.url }}" height="250px" width="350px">
+                        <div class="card mb-5 shadow-sm">
+                            <a href="{% url 'detail' project.id %}">
+                                <img class="card-img-top" src="{{ project.image.url }}" height="250px" width="350px">
+                            </a>
                             <div class="card-body">
-                                <h5 class="card-title">{{ project.title }}</h5>
-                                <p class="card-text">{{ project.summary }}</p>
+                                <h4 class="card-title text-center">{{ project.title }}</h4>
                             </div>
                         </div>
                     </div>
