@@ -36,9 +36,9 @@
             <div class="container">
                 <div class="row">
                     {% for project in projects.all %}
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img class="card-img-top" src="{{ project.image }}" alt="{{ project.title }}">
+                    <div class="col-lg-4 py-3">
+                        <div class="card mb-5 shadow-lg h-100">
+                            <img class="card-img-top" src="{{ project.image.url }}" height="250px" width="350px">
                             <div class="card-body">
                                 <h5 class="card-title">{{ project.title }}</h5>
                                 <p class="card-text">{{ project.summary }}</p>
@@ -53,7 +53,7 @@
     </main>
 
     <footer class="text-muted">
-        <div class="container">
+        <div class="container mt-3">
             <p class="float-right"><a href="#">Back to top</a></p>
             <p> Django Projects &copy; Alin Babu - 2020</p>
         </div>
