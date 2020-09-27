@@ -5,3 +5,4 @@ static/
 portfolio/__pycache__/
 portfolio/__pycache__/settings.cpython-38.pyc
 portfolio/__pycache__/urls.cpython-38.pyc
+portfolio/secret.py
